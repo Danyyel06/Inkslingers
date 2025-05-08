@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f5f3ed;
+    scroll-behavior: smooth;
+    color:#000;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color:#4b4b4b5b;
+    backdrop-filter: blur(10px);
+
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+}
+.head-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.head-left button{
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    font-weight: 700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.head-left button:hover{
+    opacity: 0.7;
+}
+.head-right{
+    display: flex;
+    align-items: center;  
+}
+.head-right a{
+    text-decoration: none;
+    color: #000;
+    padding-left : 25px;
+    font-size: 15px;
+}
+
+.hero-section{
+   position: relative; 
+   width: 100%;
+   height: 100vh; 
+   overflow: hidden;
+}
+
+.hero-vid{
+   width: 100%;
+   height: 100%;
+   position: relative; 
+}
+
+.hero-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-info{
+    position: absolute;
+    z-index: 1;
+    top: 85px;
+    left:50px;
+}
+
+.hero-info h1{
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.hero-info p{
+    color: white;
+    max-width: 210px;
+}
+
+.hero-info button{
+    border: 2px solid #edff66;
+    color: black;
+    padding: 10px 40px;
+    background-color: #edff66;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.hero-info button:hover{
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 20px #edff66;
+}
+
+.gaming-text{
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.next-btn{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #edff66;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45%;
+    bottom: 45%;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.next-btn:hover{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    box-shadow: 0 0 25px #edff66;
+}
