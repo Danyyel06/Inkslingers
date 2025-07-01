@@ -11,6 +11,7 @@ body {
     max-width: 1200px;
     margin: 0 2px;
     padding: 0 10px;
+    
 }
 
 /* Navbar */
@@ -145,11 +146,27 @@ body {
 }
 
 .hero-image img {
-    width: 76%;
-    height: 76%;
+    width: 73%;
+    height: 73%;
     transform: rotate(13deg);
     padding-left: 4rem;
+    animation: floatUpDown 5s ease-in-out infinite; /* Apply animation */
 
+
+}
+
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0); /* Start at original position */
+    }
+    50% {
+        transform: translateY(-25px); /* Move 20px up */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
 }
 
 /* Combined About Us & Story Section */
@@ -161,16 +178,14 @@ body {
 
 .left-about-section {
     flex: 1;
-    background-color: #2b303b;
-    /* Dark grey from image */
+    background-color: #000;
     color: #fff;
-    padding: 80px 40px;
+    padding: 30px 40px;
     display: flex;
     align-items: center;
-    /* Vertically center content */
     position: relative;
     overflow: hidden;
-    /* For the quote icon */
+    
 }
 
 .left-content-wrapper {
@@ -185,72 +200,43 @@ body {
 }
 
 .left-about-section .section-tag {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
-    color: #a0a0a0;
+    color: #fff;
     /* Lighter grey for the tag */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: flex;
     align-items: center;
 }
 
-.left-about-section .section-tag i {
-    margin-right: 8px;
-    color: #1a6d36;
-    /* Green color for the icon */
-}
+
+
 
 .left-about-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5em;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3.2em;
     font-weight: 700;
-    color: #1a6d36;
+    color: #FFF;
     /* Green title */
     margin-bottom: 30px;
     line-height: 1.2;
 }
 
-/* Decorative quote icon (basic implementation) */
-.quote-icon-deco {
-    position: absolute;
-    top: 60px;
-    /* Adjust position */
-    left: 50px;
-    /* Adjust position */
-    font-size: 15em;
-    /* Large size */
-    color: rgba(255, 255, 255, 0.05);
-    /* Very light, transparent white */
-    font-family: serif;
-    /* Ensure it renders as a serif quote if using pseudo-element */
-    line-height: 1;
-    pointer-events: none;
-    user-select: none;
-    transform: rotate(-10deg);
-}
-
-/* Using pseudo-element for the actual quote */
-.quote-icon-deco::before {
-    content: "”";
-    /* Large closing quote */
-    /* Or if it's the opening quote: content: "“"; */
-}
 
 
 .left-about-section p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: #e0e0e0;
     /* Light grey text */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     line-height: 1.8;
 }
 
 /* Button for dark section */
 .btn-dark-section {
-    background-color: #e0924c;
+    background-color: #38AC61;
     /* Orange background */
     color: #fff;
-    border: 1px solid #e0924c;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -262,8 +248,7 @@ body {
 }
 
 .btn-dark-section:hover {
-    background-color: #d17c3c;
-    border-color: #d17c3c;
+    background-color: #fe7412d3;
 }
 
 .btn-dark-section i {
@@ -274,7 +259,7 @@ body {
 
 .right-info-section {
     flex: 1;
-    background-color: #f0f3f6;
+    background-color: #efefefe1;
     /* Light grey/blue background from image */
     padding: 80px 40px;
     display: flex;
@@ -286,41 +271,69 @@ body {
     align-items: flex-start;
     /* Align cards to the left within the column */
 }
-
 .info-card {
-    background-color: #fff;
+    background-color: #d1f5e1;
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    /* Stronger shadow for cards */
     max-width: 500px;
-    /* Limit card width */
     text-align: left;
+
+    /* Add these for the hover effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for size and shadow */
+    cursor: pointer; /* Indicate it's clickable/interactive */
 }
 
-.info-card-green {
-    border-top: 5px solid #1a6d36;
-    /* Green border top for "Who We Are" */
+.info-card:nth-of-type(2){
+    background-color: #ffefd9;
 }
 
-.info-card-orange {
-    border-top: 5px solid #e0924c;
-    /* Orange border top for "What We Do" */
+/* Hover effect for the entire card */
+.info-card:hover {
+    transform: scale(1.05); /* Increases size by 3% */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
 }
 
+/* Existing CSS for .card-icon */
 .card-icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #f0f0f0;
-    /* Light background for icon circle */
+    background-color: #f0f0f0; /* Light background for icon circle */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 24px;
-    /* Icon size */
+    font-size: 24px; /* Icon size - note: this won't affect the <img> */
+
+    /* Add these for the icon rotation transition */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for rotation */
 }
+
+/* Hover effect for the icon inside the hovered card */
+.info-card:hover .card-icon {
+    transform: rotate(5deg); /* Rotates the icon slightly by 5 degrees clockwise */
+}
+
+/* Ensure the image inside the icon also participates in the rotation if it's the primary visual */
+.card-icon img {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    /* You might not need a separate transition here if the parent .card-icon rotates */
+    /* If you want the image itself to rotate independently, you'd add: */
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+/* If you want the image itself to also rotate relative to its parent container: */
+.info-card:hover .card-icon img {
+    transform: rotate(-15deg); /* Rotate in opposite direction to cancel out parent, or more/less for custom effect */
+ }
+
+
 
 .info-card-green .card-icon {
     color: #1a6d36;
@@ -337,20 +350,29 @@ body {
 }
 
 .info-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    color: #333;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.1em;
+    color: #0a5f47;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.info-card h3:nth-of-type(2) {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.1em;
+    color: #9a3412;
     margin-bottom: 15px;
 }
 
 .info-card p {
     font-size: 1em;
-    color: #555;
+    color: #047857;
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
 .info-card p:last-child {
+   color: f97316;
     margin-bottom: 0;
 }
 
