@@ -1,36 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gaming Website</title>
+    <title>Inkslingers Writing Co.</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="head-left">
-                <P>InkSlingers</P>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Logo 1.png" alt="Inkslingers Logo"> Inkslingers <span style="color: #FE7412;">Writing
+                    Co.</span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Crafting Words that move minds and markets</h1>
+                <p>At Inkslingers, we don't just write—we breathe life into ideas, brands, and stories. Whether you're a
+                    company, an author or a creative, you've just found your tribe</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/Hero-Logo2.png" alt="Hand holding a pen illustration">
+            </div>
+        </div>
+    </section>
+
+
+
+
+   <section class="about-us-sections">
+        <div class="left-about-section">
+            <div class="left-content-wrapper">
+                <p class="section-tag"><i class="fas fa-bookmark"></i> Our Story</p>
+                <h2>The InkSlingers Story</h2>
+                <div class="quote-icon-deco"></div> <p>Here at InkSlingers, we start by listening—your vision fuels our words. Every line we craft is purposeful, never generic.</p>
+                <p>No templates, just tailored brilliance that speaks to who you are. We care about impact, not just output. And best of all? We're easy to work with – collaborative, on time, and always drama-free.</p>
+                <a href="#" class="btn btn-dark-section">Discover Our Process <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="right-info-section">
+            <div class="info-card info-card-green">
+                <div class="card-icon"><i class="fas fa-users"></i></div> <h3>Who We Are</h3>
+                <p>Inkslingers Writing Co. is a team of bold, passionate storytellers dedicated to helping brands, entrepreneurs, and visionaries communicate with clarity, creativity, and confidence.</p>
+                <p>Founded by writers who believe in the power of words to change lives and shape the world.</p>
             </div>
 
-            <div class="head-right">
-                <p><a href="#">OUR SOLUTIONS</a></p>
-                <p><a href="#">ABOUT US</a></p>
-                <p><a href="#">CONTACT US</a></p>
+            <div class="info-card info-card-orange">
+                <div class="card-icon"><i class="fas fa-lightbulb"></i></div> <h3>What We Do</h3>
+                <p>We produce content that not only sounds good, but drives results. From sales-driven copy to soul-stirring stories, we don't just write—we elevate.</p>
+                <p>We exist to turn ideas into influence—into compelling sentences at a time.</p>
             </div>
-        </header>
-        <section class="hero-section">
-            <div class="hero-vid">
-                <video loop plays-inline muted autoplay class="hero-video"><source src="Videos/hero-1.mp4" type="video/mp4"></video>   
-                <!-- <spline-viewer url="https://prod.spline.design/5svVWueje-tw2rFl/scene.splinecode"></spline-viewer> -->
-                <div class="hero-info">
-                <h1>REDEFINE</h1>
-                <p>Enter the metagame Layer Unleash the Play Economy</p>
-                <button>Watch Trailer</button>
+        </div>
+    </section>
+
+    
+
+    <section class="services-and-feedback-grid">
+        <div class="container">
+            <div class="grid-container">
+
+                <div class="grid-item card-green-accent">
+                    <div class="card-icon-circle green-circle"><i class="fas fa-magic"></i></div>
+                    <h3>You Bring the Vision</h3>
+                    <p>We collaborate with individuals and brands ready to stand out. Whether you’re launching a new product, re-branding, building an audience, or telling your story.</p>
+                    <a href="#" class="card-link">Discover our process <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="grid-item card-orange-accent">
+                    <div class="card-icon-circle orange-circle"><i class="fas fa-pen-nib"></i></div>
+                    <h3>We'll Bring the Voice</h3>
+                    <p>Crafted narratives that resonate and convert</p>
+                </div>
+
+                <div class="grid-item card-white-plain">
+                    <div class="card-icon-circle grey-circle"><i class="fas fa-handshake"></i></div>
+                    <h3>Creative Partners</h3>
+                    <p>Not just a writing team—your strategic allies</p>
+                </div>
+
+                <div class="grid-item card-long-process">
+                    <div class="card-top">
+                        <div class="card-icon-circle dark-grey-circle"><i class="fas fa-bolt"></i></div>
+                        <h3>Our Process</h3>
+                    </div>
+                    <p>Our process is personal, purposeful, and tailored to your needs. We'll meet you at your vision and amplify it through strategic storytelling and compelling content.</p>
+                    <div class="process-links">
+                        <a href="#">Personal<br>Approach</a>
+                        <a href="#">Purposeful<br>Strategy</a>
+                        <a href="#">Tailored<br>Solutions</a>
+                    </div>
+                </div>
+
+                <div class="grid-item card-testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote-text">"Inkslingers transformed our brand voice completely. They're true creative partners."</p>
+                    <p class="quote-author">-- Sarah M., CEO</p>
+                </div>
+
+                <div class="grid-item card-blue-accent">
+                    <div class="card-icon-circle white-heart-circle"><i class="fas fa-heart"></i></div>
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+
             </div>
-            <h1 class="gaming-text">Gaming </h1>
-            <div class="next-btn">
-                Next
+        </div>
+    </section>
+
+
+    <section class="services-pricing-section">
+    <div class="container">
+        <div class="service-card-grid">
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-file-alt"></i> </div>
+                <h3>Content Writing</h3>
+                <p>Establish thought leadership with content that educates and converts.</p>
+                <ul>
+                    <li>Blog Posts</li>
+                    <li>Articles</li>
+                    <li>Web Content</li>
+                    <li>Case Studies</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="price">From $199</span>
+                    <a href="#" class="btn-service-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i> </div>
+                <h3>SEO Content</h3>
+                <p>Content that dominates search results while engaging your audience.</p>
+                <ul>
+                    <li>SEO Optimization</li>
+                    <li>Keyword Research</li>
+                    <li>Content Strategy</li>
+                    <li>Competitor Analysis</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="price">From $249</span>
+                    <a href="#" class="btn-service-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-share-alt"></i> </div>
+                <h3>Social Media</h3>
+                <p>Engaging social media content that grows your following and drives engagement.</p>
+                <ul>
+                    <li>Post Creation</li>
+                    <li>Content Calendar</li>
+                    <li>Community Building</li>
+                    <li>Hashtag Strategy</li>
+                </ul>
+                <div class="card-footer">
+                    <span class="price">From $179</span>
+                    <a href="#" class="btn-service-card">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-col about-col">
+            <div class="footer-logo">
+                <img src="https://via.placeholder.com/30x30" alt="Inkslingers Logo"> Inkslingers<br>Writing Co.
+            </div>
+            <p>We Help Brands Speak With Clarity, Creativity, and Confidence. Transforming ideas into influence —one compelling sentence at a time.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Copywriting</a></li>
+                <li><a href="#">Content Writing</a></li>
+                <li><a href="#">Brand Voice</a></li>
+                <li><a href="#">Creative Writing</a></li>
+                <li><a href="#">SEO Content</a></li>
+                <li><a href="#">Email Marketing</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Stay Updated</h4>
+            <p>Get writing tips and industry insights delivered to your inbox.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="subscribe-btn">Subscribe <i class="fas fa-plus"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i> +234 00 0000 0000
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> youremail@gmail.com
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
+            </div>
+        </div>
+        <div class="container copyright">
+            &copy; 2025 Built by Inkslingers Writing Co. All rights reserved
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,158 +1,978 @@
-body{
+/* Universal Styles */
+body {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 2px;
+    padding: 0 10px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 2px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #38AC61; 
+}
+
+.navbar .logo img {
+    margin-right: 0px;
+}
+
+.navbar .nav-links ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color:#f5f3ed;
-    scroll-behavior: smooth;
-    color:#000;
-}
-
-.container{
-    font-family: Arial, Helvetica, sans-serif;
-    color:#000;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 
-header{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-    z-index: 999;
-    background-color:#4b4b4b5b;
-    backdrop-filter: blur(10px);
-
+.navbar .nav-links li {
+    margin-left: 30px;
 }
 
-.head-left{
-    display: flex;
-    align-items: center;
-}
-.head-left img{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.head-left button{
-    border-radius: 20px;
-    padding: 10px 30px;
-    border: none;
-    font-weight: 700;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.head-left button:hover{
-    opacity: 0.7;
-}
-.head-right{
-    display: flex;
-    align-items: center;  
-}
-.head-right a{
+.navbar .nav-links a {
     text-decoration: none;
     color: #000;
-    padding-left : 25px;
-    font-size: 15px;
+    font-weight: 800;
+    transition: color 0.3s ease;
+    font-size:larger;
 }
 
-.hero-section{
-   position: relative; 
-   width: 100%;
-   height: 100vh; 
-   overflow: hidden;
+.navbar .nav-links a:hover {
+    color: #38AC61;
 }
 
-.hero-vid{
-   width: 100%;
-   height: 100%;
-   position: relative; 
+/* Hero Section */
+.hero-section {
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+   
 }
 
-.hero-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
 }
 
-.hero-info{
-    position: absolute;
-    z-index: 1;
-    top: 85px;
-    left:50px;
+.hero-content {
+    flex: 1;
+    /* max-width: 600px; */
 }
 
-.hero-info h1{
-    font-size: 120px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-style: normal;
-}
-
-.hero-info p{
-    color: white;
-    max-width: 210px;
-}
-
-.hero-info button{
-    border: 2px solid #edff66;
-    color: black;
-    padding: 10px 40px;
-    background-color: #edff66;
-    border-radius: 20px;
+.hero-content h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3.5em;
     font-weight: 700;
-    transition: 0.6s;
+    color: #000;
+ 
+    line-height: 1.2;
+    max-width: 500px;
+    margin:30px 0px 20px 0px
 }
 
-.hero-info button:hover{
-    background-color: transparent;
-    color: #ffffff;
-    box-shadow: 0 0 20px #edff66;
+.hero-content p {
+    font-size: 1.1em;
+    color: #000;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-.gaming-text{
-    font-size: 120px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
+.cta-buttons {
+    display: flex;
+    gap: 20px;
 }
 
-.next-btn{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #edff66;
-    z-index: 100;
-    position: absolute;
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #38AC61; /* Green */
+    color: #fff;
+    border: 1px solid #38AC61;
+}
+
+.btn-primary:hover {
+    background-color: #14552b;
+    border-color: #14552b;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #FE7412; /* Orange */
+    border: 1px solid #FE7412;
+}
+
+.btn-secondary:hover {
+    background-color: #FE7412;
+    color: #fff;
+}
+
+.hero-image {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 45%;
-    bottom: 45%;
-    cursor: pointer;
-    font-weight: bold;
-    color: black;
-    opacity: 0;
-    transition: 0.5s;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.5s;
 }
 
-.next-btn:hover{
-    width: 200px;
-    height: 200px;
-    opacity: 1;
-    box-shadow: 0 0 25px #edff66;
+.hero-image img {
+    width: 76%;
+    height: 76%;
+    transform: rotate(13deg);
+    padding-left: 4rem;
+    
+}
+
+/* Combined About Us & Story Section */
+.about-us-sections {
+    display: flex;
+    min-height: 700px; /* Adjust height as needed */
+}
+
+.left-about-section {
+    flex: 1;
+    background-color: #2b303b; /* Dark grey from image */
+    color: #fff;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    position: relative;
+    overflow: hidden; /* For the quote icon */
+}
+
+.left-content-wrapper {
+    max-width: 550px; /* Adjust content width */
+    margin-left: auto; /* Align to the right side of the dark column */
+    padding-right: 50px; /* Space from the right edge */
+    position: relative;
+    z-index: 1;
+}
+
+.left-about-section .section-tag {
+    font-size: 1em;
+    font-weight: 500;
+    color: #a0a0a0; /* Lighter grey for the tag */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left-about-section .section-tag i {
+    margin-right: 8px;
+    color: #1a6d36; /* Green color for the icon */
+}
+
+.left-about-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #1a6d36; /* Green title */
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Decorative quote icon (basic implementation) */
+.quote-icon-deco {
+    position: absolute;
+    top: 60px; /* Adjust position */
+    left: 50px; /* Adjust position */
+    font-size: 15em; /* Large size */
+    color: rgba(255, 255, 255, 0.05); /* Very light, transparent white */
+    font-family: serif; /* Ensure it renders as a serif quote if using pseudo-element */
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-10deg);
+}
+
+/* Using pseudo-element for the actual quote */
+.quote-icon-deco::before {
+    content: "”"; /* Large closing quote */
+    /* Or if it's the opening quote: content: "“"; */
+}
+
+
+.left-about-section p {
+    font-size: 1.1em;
+    color: #e0e0e0; /* Light grey text */
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Button for dark section */
+.btn-dark-section {
+    background-color: #e0924c; /* Orange background */
+    color: #fff;
+    border: 1px solid #e0924c;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    display: inline-flex; /* To align icon */
+    align-items: center;
+}
+
+.btn-dark-section:hover {
+    background-color: #d17c3c;
+    border-color: #d17c3c;
+}
+
+.btn-dark-section i {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+
+.right-info-section {
+    flex: 1;
+    background-color: #f0f3f6; /* Light grey/blue background from image */
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* Center cards vertically */
+    align-items: flex-start; /* Align cards to the left within the column */
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Stronger shadow for cards */
+    max-width: 500px; /* Limit card width */
+    text-align: left;
+}
+
+.info-card-green {
+    border-top: 5px solid #1a6d36; /* Green border top for "Who We Are" */
+}
+
+.info-card-orange {
+    border-top: 5px solid #e0924c; /* Orange border top for "What We Do" */
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light background for icon circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Icon size */
+}
+
+.info-card-green .card-icon {
+    color: #1a6d36; /* Green icon color */
+    background-color: rgba(26, 109, 54, 0.1); /* Very light green background */
+}
+
+.info-card-orange .card-icon {
+    color: #e0924c; /* Orange icon color */
+    background-color: rgba(224, 146, 76, 0.1); /* Very light orange background */
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.info-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Work With Us Section (from previous request, retained) */
+.work-with-us-section {
+    background-color: #2e8b57; /* The same green as the "Who we are" card */
+    padding: 80px 0;
+    color: #fff; /* White text on dark background */
+    text-align: center; /* Center content horizontally */
+}
+
+.work-with-us-content {
+    max-width: 800px; /* Adjust width as seen in the image */
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure padding on smaller screens */
+}
+
+.work-with-us-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.work-with-us-content h4 { /* For the subheading "You Bring the Vision..." */
+    font-size: 1.6em;
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.9); /* Slightly muted white */
+}
+
+.work-with-us-content p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px; /* Space between paragraphs */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cta-buttons-dark {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Button styles for dark background */
+.btn-primary-dark {
+    background-color: #fff; /* White background */
+    color: #2e8b57; /* Green text */
+    border: 1px solid #fff;
+}
+
+.btn-primary-dark:hover {
+    background-color: #f0f0f0; /* Slightly grey on hover */
+    color: #2e8b57;
+    border-color: #f0f0f0;
+}
+
+.btn-secondary-dark {
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    border: 1px solid #fff; /* White border */
+}
+
+.btn-secondary-dark:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
+    color: #fff;
+}
+.work-with-us-section {
+    background-color: #2e8b57; /* The same green as the "Who we are" card */
+    padding: 80px 0;
+    color: #fff; /* White text on dark background */
+    text-align: center; /* Center content horizontally */
+}
+
+.work-with-us-content {
+    max-width: 800px; /* Adjust width as seen in the image */
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure padding on smaller screens */
+}
+
+.work-with-us-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.work-with-us-content h4 { /* For the subheading "You Bring the Vision..." */
+    font-size: 1.6em;
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.9); /* Slightly muted white */
+}
+
+.work-with-us-content p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px; /* Space between paragraphs */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cta-buttons-dark {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Button styles for dark background */
+.btn-primary-dark {
+    background-color: #fff; /* White background */
+    color: #2e8b57; /* Green text */
+    border: 1px solid #fff;
+}
+
+.btn-primary-dark:hover {
+    background-color: #f0f0f0; /* Slightly grey on hover */
+    color: #2e8b57;
+    border-color: #f0f0f0;
+}
+
+.btn-secondary-dark {
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    border: 1px solid #fff; /* White border */
+}
+
+.btn-secondary-dark:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
+    color: #fff;
+}
+
+
+/* NEW: Services and Feedback Grid Section */
+.services-and-feedback-grid {
+    padding: 80px 0;
+    background-color: #f0f3f6; /* Consistent light background */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Space between grid items */
+    align-items: start; /* Align items to the start of their grid area */
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    display: flex; /* For internal vertical alignment */
+    flex-direction: column;
+}
+
+.grid-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Specific card styles */
+
+/* Card with Green Accent */
+.card-green-accent {
+    background-color: #1a6d36; /* Solid green background */
+    color: #fff;
+    padding: 40px 30px; /* More padding */
+    grid-column: span 2; /* Spans two columns on larger screens */
+    /* On smaller screens, grid-column will revert to 1fr via auto-fit */
+}
+
+.card-green-accent h3 {
+    color: #fff;
+    font-size: 2.2em; /* Larger heading */
+}
+
+.card-green-accent p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.card-green-accent .card-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card-green-accent .card-link:hover {
+    transform: translateX(5px);
+}
+
+.card-green-accent .card-link i {
+    margin-left: 8px;
+    font-size: 0.9em;
+}
+
+/* Card with Orange Accent */
+.card-orange-accent {
+    background-color: #e0924c; /* Solid orange background */
+    color: #fff;
+}
+
+.card-orange-accent h3 {
+    color: #fff;
+}
+
+.card-orange-accent p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Card with Blue Accent */
+.card-blue-accent {
+    background-color: #4c82e0; /* Solid blue background */
+    color: #fff;
+    text-align: center;
+    justify-content: center; /* Center content vertically in card */
+}
+
+.card-blue-accent h3 {
+    color: #fff;
+    font-size: 3em; /* Larger percentage text */
+    margin-bottom: 5px;
+}
+
+.card-blue-accent p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Card with White Plain background (default grid-item styling) */
+.card-white-plain {
+    /* No specific background or text color overrides, uses default .grid-item */
+}
+
+/* Long Process Card */
+.card-long-process {
+    grid-column: span 2; /* Spans two columns on larger screens */
+    /* On smaller screens, grid-column will revert to 1fr via auto-fit */
+}
+
+.card-long-process .card-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-long-process h3 {
+    margin-bottom: 0; /* Remove default margin */
+    margin-left: 15px; /* Space after icon */
+}
+
+.card-long-process .process-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow links to wrap */
+    gap: 15px; /* Space between links when wrapped */
+}
+
+.card-long-process .process-links a {
+    color: #1a6d36; /* Green link color */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95em;
+    line-height: 1.3;
+    border-bottom: 2px solid #1a6d36; /* Underline effect */
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.card-long-process .process-links a:hover {
+    color: #14552b;
+    border-color: #14552b;
+}
+
+/* Testimonial Card */
+.card-testimonial {
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-testimonial .stars {
+    color: #e0924c; /* Orange for stars */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.card-testimonial .quote-text {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-testimonial .quote-author {
+    font-size: 0.9em;
+    color: #777;
+    font-weight: 500;
+}
+
+
+/* Common icon circle styling */
+.card-icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px; /* Default margin for cards without explicit .card-top */
+}
+
+.green-circle {
+    background-color: rgba(26, 109, 54, 0.15); /* Slightly darker transparent green */
+    color: #fff; /* White icon on green card */
+}
+
+.orange-circle {
+    background-color: rgba(224, 146, 76, 0.15); /* Slightly darker transparent orange */
+    color: #fff; /* White icon on orange card */
+}
+
+.grey-circle {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.dark-grey-circle {
+    background-color: #333; /* Dark background for icon circle */
+    color: #fff;
+}
+
+.white-heart-circle {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white for blue card */
+    color: #fff;
+}
+
+
+
+/* NEW: Services/Pricing Section Styles */
+.services-pricing-section {
+    padding: 80px 0;
+    background-color: #f8f8f8; /* Light background for the section */
+}
+
+.service-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    align-items: start; /* Align cards to the top of their grid cell */
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes footer to bottom */
+    height: 100%; /* Ensure all cards have equal height */
+}
+
+.service-card .service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(26, 109, 54, 0.1); /* Light green background */
+    color: #1a6d36; /* Green icon color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.service-card ul li {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+}
+
+.service-card ul li::before {
+    content: '\2022'; /* Unicode for a solid bullet point */
+    color: #e0924c; /* Orange bullet color */
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.service-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    padding-top: 20px; /* Space above footer */
+    border-top: 1px solid #eee; /* Separator line */
+}
+
+.service-card .price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1a6d36; /* Green price text */
+}
+
+.btn-service-card {
+    background-color: #1a6d36; /* Green button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-service-card:hover {
+    background-color: #14552b;
+}
+
+.btn-service-card i {
+    margin-left: 8px;
+    font-size: 0.8em;
+}
+
+/* Adjustments for the specific card designs */
+/* Social Media card uses a pinkish button */
+.service-card:nth-child(3) .service-icon {
+    background-color: rgba(255, 105, 180, 0.1); /* Light pink */
+    color: hotpink; /* Hot pink icon */
+}
+.service-card:nth-child(3) .btn-service-card {
+    background-color: hotpink; /* Hot pink button */
+}
+.service-card:nth-child(3) .btn-service-card:hover {
+    background-color: #ff69b4da;
+}
+
+/* Creative Writing card spans multiple columns on large screens */
+.creative-writing-card {
+    grid-column: span 3; /* Spans 3 columns on larger screens */
+    /* On smaller screens, auto-fit will make it 1fr */
+    text-align: center; /* Center content */
+    align-items: center; /* Align items to center */
+}
+
+.creative-writing-card .service-icon {
+    background-color: rgba(0, 0, 0, 0.05); /* Light grey */
+    color: #555; /* Dark grey icon */
+}
+
+
+
+/* NEW: Footer Section Styles */
+.main-footer {
+    background-color: #2b303b; /* Dark background from image */
+    color: #fff;
+    padding: 60px 0 20px; /* Top padding, then bottom padding for copyright */
+    font-size: 0.95em;
+}
+
+.main-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr; /* Approximate column distribution from image */
+    gap: 40px;
+    padding-bottom: 40px; /* Space above contact info */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+}
+
+.footer-col {
+    margin-bottom: 20px; /* Space between columns on smaller layouts if grid wraps */
+}
+
+.footer-col h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #1a6d36; /* Green heading as in image */
+}
+
+/* About Column */
+.footer-col.about-col .footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #1a6d36;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.footer-col.about-col .footer-logo img {
+    margin-right: 10px;
+}
+
+.footer-col.about-col p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #1a6d36; /* Green on hover */
+    border-color: #1a6d36;
+}
+
+/* Navigation Columns (Services, Company) */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #1a6d36; /* Green on hover */
+}
+
+/* Stay Updated Column */
+.subscribe-form {
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    background-color: #3e4450; /* Slightly lighter dark for input */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.subscribe-btn {
+    background-color: #e0924c; /* Orange button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-btn:hover {
+    background-color: #d17c3c;
+}
+
+.subscribe-btn i {
+    margin-left: 8px;
+    font-size: 0.8em;
+}
+
+/* Footer Bottom Section (Contact Info & Copyright) */
+.footer-bottom {
+    padding-top: 20px;
+}
+
+.footer-contact-info {
+    display: flex;
+    justify-content: center; /* Center contact items */
+    gap: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #1a6d36; /* Green icons */
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85em;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Lighter border above copyright */
 }
