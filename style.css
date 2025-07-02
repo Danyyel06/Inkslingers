@@ -959,10 +959,10 @@ body {
 
 /* NEW: Footer Section Styles */
 .main-footer {
-    background-color: #2b303b;
+    background-color: #000;
     /* Dark background from image */
     color: #fff;
-    padding: 60px 0 20px;
+    padding: 60px 30px;
     /* Top padding, then bottom padding for copyright */
     font-size: 0.95em;
 }
@@ -984,7 +984,7 @@ body {
 }
 
 .footer-col h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 1.4em;
     margin-bottom: 25px;
     color: #1a6d36;
@@ -1022,7 +1022,8 @@ body {
     font-size: 1.2em;
     width: 35px;
     height: 35px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1.5px solid #fff;
+    text-decoration: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1067,23 +1068,24 @@ body {
     margin-top: 20px;
 }
 
-.subscribe-form input[type="email"] {
-    background-color: #3e4450;
+.subscribe-form input[type="textfield"] {
+    background-color: #000;
     /* Slightly lighter dark for input */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 12px 15px;
+    border: 1px solid #fff;
+    padding: 2px 15px;
     border-radius: 5px;
     color: #fff;
     font-size: 1em;
+    width: 400px;
+    height: 80px;
 }
 
 .subscribe-form input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: #efefef;
 }
 
 .subscribe-btn {
-    background-color: #e0924c;
-    /* Orange button */
+    background-color: #FE7412;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -1097,7 +1099,7 @@ body {
 }
 
 .subscribe-btn:hover {
-    background-color: #d17c3c;
+    background-color: #fe7412d0;
 }
 
 .subscribe-btn i {
@@ -1396,7 +1398,7 @@ body {
 
 /* NEW: Contact Us Section Styles */
 .contact-us-section {
-    padding: 80px 0;
+    padding: 80px 40px;
     background-color: #f8f8f8; /* Light background */
     text-align: center;
 }
@@ -1423,8 +1425,8 @@ body {
 
 /* Get In Touch Column */
 .get-in-touch h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3em;
     color: #333;
     margin-bottom: 15px;
 }
@@ -1436,64 +1438,120 @@ body {
     margin-bottom: 30px;
 }
 
+/* Container for the entire card */
 .contact-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden; /* For the arrow */
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Vertically align items in the center */
+    gap: 20px; /* Space between the icon, text, and arrow */
+    padding: 25px; /* Padding inside the card */
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners for the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    max-width: 400px; /* Adjust max width as needed */
+    margin: 60px 0px; /* Example margin for demonstration */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+    position: relative; /* Needed for positioning the arrow if it's not inline */
 }
 
-.contact-card-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(26, 109, 54, 0.1); /* Light green */
-    color: #1a6d36; /* Green icon */
+/* Icon Wrapper (the light green circle/squircle) */
+.contact-icon-wrapper {
+    width: 60px; /* Size of the icon background circle */
+    height: 60px; /* Must be equal to width */
+    background-color: #E6F7E6; /* Light green background color */
+    border-radius: 12px; /* Slightly rounded rectangle (squircle) */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    margin-right: 15px;
+    /* You could use border-radius: 50%; for a perfect circle if preferred */
 }
 
-.contact-card-info h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 5px;
+
+.contact-icon-wrapper:nth-of-type(2) {
+    width: 60px; /* Size of the icon background circle */
+    height: 60px; /* Must be equal to width */
+    background-color: #ffefd9 !important; /* Light green background color */
+    border-radius: 12px; /* Slightly rounded rectangle (squircle) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* You could use border-radius: 50%; for a perfect circle if preferred */
 }
 
-.contact-card-info p {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 5px;
+/* Styling for the SVG icon itself */
+.contact-icon-wrapper i {
+    color: #38a169; /* Darker green color for the envelope icon */
+    /* If you used an <img> tag, you would target img and not svg */
 }
 
-.contact-card-info a {
-    text-decoration: none;
-    color: #e0924c; /* Orange link */
-    font-weight: 500;
-    font-size: 0.9em;
+
+.contact-icon-wrapper i:nth-of-type(2) {
+    color: #ffefd9; /* Darker green color for the envelope icon */
+    /* If you used an <img> tag, you would target img and not svg */
+}
+/* Text Content Area */
+.contact-text-content {
+    flex-grow: 1; /* Allows this section to take up available space */
+    text-align: left; /* Align text to the left */
 }
 
-.contact-card-arrow {
-    position: absolute;
-    right: 20px;
-    color: #999;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
+.contact-text-content h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust font size for heading */
+    color: #333; /* Darker text color */
+    font-weight: 600; /* Semi-bold */
 }
 
-.contact-card:hover .contact-card-arrow {
-    transform: translateX(5px);
+.contact-text-content p {
+    margin: 5px 0; /* Space between heading and sub-text */
+    font-size: 0.9em; /* Smaller font size for descriptive text */
+    color: #666; /* Lighter text color */
 }
 
-/* Response Time Card */
+.contact-text-content a {
+    display: block; /* Make the link a block element so margin works better */
+    margin-top: 8px; /* Space between description and email link */
+    font-size: 1em; /* Font size for the email link */
+    color: #38a169; /* Green color for the email link */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: 500; /* Medium weight */
+}
+
+.contact-text-content a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+.contact-text-content a:hover:nth-of-type(2) {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+
+/* Arrow Icon */
+.contact-arrow {
+    /* If you want the arrow to be absolutely positioned on the right edge */
+    /* position: absolute;
+    right: 25px; */
+    color: #999; /* Grey color for the arrow */
+    display: flex; /* Ensure flex behavior for centering SVG */
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-arrow svg {
+    display: block; /* Ensure no extra space below SVG */
+}
+
+/* Optional: Hover effect for the card */
+.contact-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); /* Slightly more pronounced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Optional: Transition for the arrow on hover */
+.contact-card:hover .contact-arrow svg {
+    transform: translateX(3px); /* Move arrow slightly to the right */
+    transition: transform 0.2s ease-in-out;
+}/* Response Time Card */
 .response-time-card {
     background-color: #1a6d36; /* Green background */
     color: #fff;
@@ -1540,8 +1598,8 @@ body {
 }
 
 .send-message-form h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
 }
@@ -1618,7 +1676,7 @@ body {
 }
 
 .send-message-btn {
-    background: linear-gradient_to_right, #1a6d36, #e0924c; /* Green to orange gradient */
+    background: #38a169; /* Green to orange gradient */
     color: #fff;
     border: none;
     padding: 15px 30px;
