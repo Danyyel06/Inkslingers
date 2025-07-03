@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkslingers Writing Co.</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -30,22 +33,29 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Crafting Words that move minds and markets</h1>
-                <p>At Inkslingers, we don't just write—we breathe life into ideas, brands, and stories. Whether you're a
-                    company, an author or a creative, you've just found your tribe</p>
-                <div class="cta-buttons">
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Crafting Words<br />
+                    that move minds<br />
+                    and markets
+                </h1>
+                <p>
+                    At Inkslingers, we don’t just write—we breathe life into ideas, brands, and stories.
+                    Whether you’re a company, an author or a creative, you’ve just found your tribe
+                </p>
+                <div class="hero-buttons">
                     <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="#" class="btn btn-secondary">View Our Work</a>
+                    <a href="#" class="btn btn-outline">View Our Work</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/Hero-Logo2.png" alt="Hand holding a pen illustration">
+                <img src="pen-illustration.png" alt="Illustration of hand writing with pen" />
             </div>
         </div>
     </section>
+
 
 
 
@@ -84,34 +94,50 @@
     </section>
 
 
-    <section class="our-approach-section">
-        <div class="container">
-            <p class="section-tag"><i class="fas fa-hand-point-right"></i> Our Approach</p>
-            <div class="approach-steps-grid">
-                <div class="approach-step-card">
-                    <div class="step-icon step-icon-1"><i class="fas fa-lightbulb"></i></div>
-                    <h4>You Bring the Vision</h4>
-                    <p>Share your ideas, goals, and dreams with us.</p>
-                    <p class="small-text">We start by listening to understand your unique vision and objectives.</p>
-                </div>
+    <section class="work-with-us-section">
+        <h2>Work with <span class="highlight">Us</span></h2>
+        <p class="section-subtitle">You Bring the Vision, We'll Bring the Voice.</p>
 
-                <div class="approach-step-card">
-                    <div class="step-icon step-icon-2"><i class="fas fa-microphone-alt"></i></div>
-                    <h4>We Bring the Voice</h4>
-                    <p>Our team develops a tailored voice that resonates with your audience.</p>
-                </div>
+        <div class="steps-container">
+            <div class="horizontal-line"></div>
 
-                <div class="approach-step-card">
-                    <div class="step-icon step-icon-3"><i class="fas fa-hands-helping"></i></div>
-                    <h4>We Collaborate</h4>
-                    <p>Through collaboration, we ensure every word serves your purpose.</p>
+            <div class="step-item">
+                <div class="step-icon-wrapper green-bg">
+                    <i class='bx bx-bulb bx-lg bx-tada-hover timeline-icon' style="padding: 120px;"></i>
                 </div>
+                <h4>You Bring the Vision</h4>
+                <p class="step-description">Starting with your ideas, goals, and dreams, we listen intently to
+                    understand your unique vision and objectives</p>
 
-                <div class="approach-step-card">
-                    <div class="step-icon step-icon-4"><i class="fas fa-check-circle"></i></div>
-                    <h4>You Stand Out</h4>
-                    <p>Your brand emerges with a voice that captivates and converts.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-icon-wrapper green-bg">
+                    <i class='bx bx-user-voice bx-lg bx-tada-hover timeline-icon' style="padding: 120px;"></i>
                 </div>
+                <h4>We Bring the Voice</h4>
+                <p class="step-description">We craft the perfect narrative for your brand, developing a tailored voice
+                    that resonates with your audience.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-icon-wrapper green-bg">
+                    <i class='bx  bx-handshake bx-lg bx-tada-hover timeline-icon' style="padding: 120px;"></i>
+                </div>
+                <h4>We Collaborate</h4>
+                <p class="step-description">Together, we refine and perfect your story, ensuring through collaboration
+                    that every word serves your purpose.</p>
+
+            </div>
+
+            <div class="step-item">
+                <div class="step-icon-wrapper green-bg">
+                    <i class='bx bxs-star bx-lg bx-tada-hover timeline-icon' style="padding: 120px;"></i>
+                </div>
+                <h4>You Stand Out</h4>
+                <p class="step-description">Your brand will emerge with a captivating, converting voice, launching
+                    content that moves markets</p>
+
             </div>
         </div>
     </section>
@@ -119,20 +145,23 @@
     <section class="ready-creative-section">
         <div class="container two-col-layout">
             <div class="left-ready-col">
-                <p class="section-tag"><i class="fas fa-bullseye"></i> Our Approach</p>
                 <h2>Ready to Stand Out?</h2>
                 <p>We collaborate with individuals and brands ready to stand out. Whether you’re launching a new
                     product, re-branding, building an audience, or telling your story—we’ll meet you at your vision and
                     amplify it.</p>
                 <div class="stats-row">
-                    <span class="stat-item">500+ Clients</span>
-                    <span class="stat-item">98% Success</span>
+                    <a href="#" class="left-ready-button">
+                        Let's Talk
+                    </a>
+                    <a href="#" class="left-ready-button">
+                        Book a Free Consultation
+                    </a>
                 </div>
             </div>
 
             <div class="right-creative-col">
                 <div class="creative-partner-card">
-                    <p class="section-tag"><i class="fas fa-paint-brush"></i> Creative Partners</p>
+
                     <h3>Creative Partners</h3>
                     <p>Our process is personal, purposeful, and tailored to your needs. When you work with InkSlingers,
                         you’re not just hiring a writing team—you’re gaining creative partners.</p>
@@ -149,16 +178,17 @@
 
     <section class="services-pricing-section">
         <div class="container">
+            <h2 class="section-title" style="text-align: center; font-size: 4rem; margin: 0;">Our <span
+                    style="color: #38AC61;">Services</span></h2>
+            <p class="section-subtitle" style="text-align: center; font-size: 2rem;">Solutions crafted to amplify your
+                <span style="color: #38AC61; text-decoration: underline;">message</span> and grow your <span
+                    style="color: #38AC61; text-decoration: underline;">brand.</span></p>
             <div class="service-card-grid">
 
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
-                                height="24">
-                                <path
-                                    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v4h4v12H6zm2-8h8v2H8zm0 4h8v2H8z" />
-                            </svg>
+                            <i class='bx  bx-quote-single-right bx-md' style="padding: 0 10px; color: #f97316;"></i>
                         </div>
                         <h3>Content Writing</h3>
                     </div>
@@ -180,18 +210,14 @@
 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
-                                height="24">
-                                <path
-                                    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v4h4v12H6zm2-8h8v2H8zm0 4h8v2H8z" />
-                            </svg>
+                        <div class="icon-wrapper" style="background-color: #e4f9ec;">
+                            <i class='bx  bx-copyright bx-md' style="padding: 0 10px; color:#10b981"></i>
                         </div>
                         <h3>Copywriting</h3>
                     </div>
                     <p class="card-description">Inkslingers crafts high-converting copy, from impactful sales pages to
                         engaging web content.</p>
-                    <ul class="service-list">
+                    <ul class="service-list green">
                         <li>Sales Pages</li>
                         <li>Product Descriptions</li>
                         <li>Email Sequences</li>
@@ -199,7 +225,7 @@
                     </ul>
                     <div class="card-footer">
 
-                        <a href="#" class="learn-more-button">
+                        <a href="#" class="learn-more-button" style="background-color: #10b981;">
                             Learn More
 
                         </a>
@@ -208,25 +234,21 @@
 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
-                                height="24">
-                                <path
-                                    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v4h4v12H6zm2-8h8v2H8zm0 4h8v2H8z" />
-                            </svg>
+                        <div class="icon-wrapper" style="background-color: #fde7f0;">
+                            <i class='bx  bx-user-voice bx-md' style="padding: 0px 10px; color: #ec4899;"></i>
                         </div>
                         <h3>Brand Voice Development</h3>
                     </div>
                     <p class="card-description">We help you find your unique voice, shape your authentic identity, and
                         connect genuinely with your audience.</p>
-                    <ul class="service-list">
+                    <ul class="service-list pink">
                         <li>Find Your Voice</li>
                         <li>Shape Your Identity </li>
                         <li>Connect Authentically.</li>
                     </ul>
                     <div class="card-footer">
 
-                        <a href="#" class="learn-more-button">
+                        <a href="#" class="learn-more-button" style="background-color: #ec4899;">
                             Learn More
 
                         </a>
@@ -236,24 +258,20 @@
 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
-                                height="24">
-                                <path
-                                    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v4h4v12H6zm2-8h8v2H8zm0 4h8v2H8z" />
-                            </svg>
+                        <div class="icon-wrapper" style="background-color: #e6f0fe;">
+                            <i class='bx  bx-pen bx-md' style="padding: 0px 10px;"></i>
                         </div>
                         <h3>Creative Writing Services</h3>
                     </div>
                     <p class="card-description">We bring your ideas to life through compelling storytelling and expert
                         scripting for your unique narrative.</p>
-                    <ul class="service-list">
+                    <ul class="service-list blue">
                         <li>Storytelling</li>
                         <li> Scripting For Your Narrative</li>
                     </ul>
                     <div class="card-footer">
 
-                        <a href="#" class="learn-more-button">
+                        <a href="#" class="learn-more-button" style="background-color: #3b82f6;">
                             Learn More
 
                         </a>
@@ -266,24 +284,20 @@
 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
-                                height="24">
-                                <path
-                                    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v4h4v12H6zm2-8h8v2H8zm0 4h8v2H8z" />
-                            </svg>
+                        <div class="icon-wrapper" style="background-color: #fef9c3;">
+                            <i class='bx  bx-edit-alt bx-md' style="padding: 0 10px; color:#facc15;"></i>
                         </div>
                         <h3>Editing and ProofReading</h3>
                     </div>
                     <p class="card-description">We transform your drafts into polished manuscripts and error-free
                         business documents.</p>
-                    <ul class="service-list">
+                    <ul class="service-list yellow">
                         <li>Polished Manuscripts</li>
                         <li>Business Documents</li>
                     </ul>
                     <div class="card-footer">
 
-                        <a href="#" class="learn-more-button">
+                        <a href="#" class="learn-more-button" style="background-color: #facc15;">
                             Learn More
 
                         </a>
