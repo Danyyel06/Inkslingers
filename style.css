@@ -2176,6 +2176,12 @@ a {
 
 /* ===== COMPREHENSIVE RESPONSIVE MEDIA QUERIES ===== */
 
+
+@media (max-width: 480px){
+    .nav-links{
+        display: none;
+    }
+}
 /* Extra Small Devices (Mobile Phones, 320px - 480px) */
 @media screen and (max-width: 480px) {
     /* Header & Navigation */
