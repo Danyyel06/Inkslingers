@@ -2184,9 +2184,14 @@ a {
     }
     
     .navbar {
+        
         flex-direction: column;
         gap: 15px;
         max-width: 100%;
+    }
+
+    .nav-links ul{
+        display: none;
     }
     
     .logo {
@@ -2212,6 +2217,7 @@ a {
     }
     
     .hero-content {
+        margin-top: 2.5em;
         max-width: 100%;
     }
     
@@ -2231,10 +2237,13 @@ a {
         flex-direction: column;
         gap: 15px;
         width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     
     .btn {
-        width: 100%;
+        width: 80%;
         padding: 12px 20px;
         font-size: 1em;
         justify-content: center;
@@ -2257,6 +2266,13 @@ a {
         max-width: 100%;
         margin-left: 0;
         padding-right: 0;
+    }
+
+    .Discover{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .left-about-section h2 {
@@ -2298,6 +2314,10 @@ a {
         flex-direction: column;
         gap: 30px;
         padding-top: 10px;
+    }
+
+    .steps-container::before{
+        display: none;
     }
     
     .horizontal-line {
@@ -2344,12 +2364,12 @@ a {
     }
     
     .left-ready-col h2 {
-        font-size: 2.2em;
+        font-size: 2em;
         margin-bottom: 15px;
     }
     
     .left-ready-col p {
-        font-size: 1em;
+        font-size: 0.9em;
         margin-bottom: 25px;
     }
     
@@ -2359,7 +2379,7 @@ a {
     }
     
     .left-ready-button {
-        width: 100%;
+        width: 80%;
         text-align: center;
         justify-content: center;
         padding: 12px 20px;
@@ -2371,6 +2391,16 @@ a {
     }
     
     /* Services Section */
+
+    .services-section-subtitle{
+        margin-bottom: 60px;
+        font-size: 1.3em;
+    }
+
+
+    .services-pricing section .section-title h2{
+        margin-top: 40px;
+    }
     .services-pricing-section {
         padding: 40px 20px;
     }
@@ -2413,6 +2443,11 @@ a {
     }
     
     /* Contact Section */
+
+    .get-in-touch h3{
+        margin-top: 9px !important;
+        font-size: 1.3em !important;
+    }
     .contact-us-section {
         padding: 40px 20px;
     }
@@ -2447,7 +2482,11 @@ a {
     }
     
     .send-message-form h3 {
-        font-size: 2em;
+        font-size: 1.9em;
+    }
+
+    .send-message-form p {
+        font-size: 0.8em;
     }
     
     .send-message-form .form-group-row {
@@ -2489,8 +2528,29 @@ a {
     }
     
     .subscribe-form input[type="textfield"] {
-        width: 100%;
+        width: 95%;
         height: 60px;
+        align-items: center;
+    }
+
+    .textarea{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .subscribe-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.9em;
     }
     
     .footer-contact-info {
@@ -2512,6 +2572,9 @@ a {
         max-width: 100%;
     }
     
+    .nav-links{
+        display: none;
+    }
     .logo {
         font-size: 20px;
         text-align: center;
@@ -2550,12 +2613,22 @@ a {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        
     }
     
     .btn {
         width: 100%;
         max-width: 300px;
         padding: 14px 25px;
+        text-align: center !important;
+        justify-content: center;
+    }
+
+    .Discover{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     /* About Us Section */
@@ -2609,7 +2682,9 @@ a {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    
+    .steps-container::before{
+        display: none;
+    }   
     .horizontal-line {
         display: none;
     }
@@ -2641,6 +2716,8 @@ a {
     .stats-row {
         flex-direction: column;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
     
     .left-ready-button {
@@ -2658,8 +2735,13 @@ a {
         font-size: 3em !important;
     }
     
+    .services-section-subtitle{
+        margin-bottom: 40px;
+        font-size: 1.4em;
+    }
     .service-card-grid {
-        grid-template-columns: repeat(2, 1fr);
+        margin-top: 60px;
+        grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
     
@@ -2668,8 +2750,13 @@ a {
     }
     
     /* Contact Section */
+
+    .get-in-touch h3{
+        margin-top: 0px !important;
+        
+    }
     .contact-us-section {
-        padding: 60px 30px;
+        padding: 30px 30px;
     }
     
     .contact-us-section .section-title {
@@ -2693,12 +2780,12 @@ a {
     
     /* Footer */
     .main-footer .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
     
     .subscribe-form input[type="textfield"] {
-        width: 100%;
+        width: 90%;
         height: 70px;
     }
     
@@ -2753,16 +2840,18 @@ a {
     /* About Us Section */
     .about-us-sections {
         margin-top: 35px;
+        display: flex;
+        flex-direction: column;
     }
     
     .left-about-section,
     .right-info-section {
-        padding: 60px 50px;
+        padding: 10px 50px 60px 50px;
     }
     
     .left-content-wrapper {
         max-width: 500px;
-        padding-right: 30px;
+        margin-left: 10px;
     }
     
     .left-about-section h2 {
@@ -2773,6 +2862,9 @@ a {
         font-size: 1.3em;
     }
     
+    .horizontal-line {
+        display: none;
+    }
     /* Work With Us Section */
     .work-with-us-section {
         padding: 70px 50px;
@@ -2800,7 +2892,8 @@ a {
     }
     
     .ready-creative-section .two-col-layout {
-        gap: 50px;
+        display: flex;
+        flex-direction: column;
     }
     
     .left-ready-col h2 {
@@ -2809,7 +2902,7 @@ a {
     
     /* Services Section */
     .services-pricing-section {
-        padding: 70px 50px;
+        padding: 0px 50px 70px 50px;
     }
     
     .services-pricing-section .section-title {
@@ -2817,13 +2910,20 @@ a {
     }
     
     .service-card-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+        ;
+    }
+    .card-description {
+        font-size: 1.3em;
+    }
+    .service-list{
+        font-size: 1.2em;
     }
     
     /* Contact Section */
     .contact-us-section {
-        padding: 70px 50px;
+        padding: 0px 50px 70px 50px;
     }
     
     .contact-us-section .section-title {
@@ -2831,7 +2931,14 @@ a {
     }
     
     .contact-content-grid {
+        display: flex;
+        flex-direction: column;
         gap: 60px;
+    }
+
+    .get-in-touch p{
+        font-size: 1.2em;
+        max-width: 500px;
     }
     
     /* Footer */
@@ -2840,8 +2947,28 @@ a {
     }
     
     .main-footer .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .footer-col.about-col p {
+        font-size: 1.3em;
+        max-width: 700px;
+    }
+
+    .footer-col{
+        font-size: 1.3em;
+    }
+
+    .subscribe-form input[type="textfield"] {
+        width: 80%;
+        height: 90px;
+    }
+    .subscribe button{
+        width: 50%;
+        padding: 15px 10px;
+        font-size: 1em;
+        font-family: "Space Grotesk", sans-serif;
     }
 }
 
@@ -2858,7 +2985,7 @@ a {
     
     /* Hero Section */
     .hero-section {
-        padding: 80px 60px;
+        padding: 80px 60px 80px 60px;
     }
     
     .hero-content {
@@ -2872,7 +2999,7 @@ a {
     /* About Us Section */
     .left-about-section,
     .right-info-section {
-        padding: 70px 60px;
+        padding: 30px 60px;
     }
     
     .left-content-wrapper {
@@ -2904,17 +3031,43 @@ a {
     
     /* Services Section */
     .services-pricing-section {
-        padding: 80px 60px;
+        padding: 20px 60px;
+
+    }
+
+    .container.services-section-title h2{
+        margin-top: 0px;
+    }
+    .container.services-section-subtitle{
+        text-align: center !important;
+    }
+    .services-section-subtitle p{
+        text-align: center !important;
+        font-size: 1.9em !important;
+        margin-top: 0px;
+        max-width: 700px;
     }
     
     .service-card-grid {
-        grid-template-columns: repeat(3, 1fr);
+       display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr 1fr));
         gap: 30px;
+        align-items: stretch;
+        
     }
     
+    .service-card{
+        min-height: 150px;
+    }
+    .card-description{
+        font-size: 1.2em;
+    }
+    .service-list{
+        font-size: 1.1em;
+    }
     /* Contact Section */
     .contact-us-section {
-        padding: 80px 60px;
+        padding: 30px 60px;
     }
     
     /* Footer */
@@ -2923,9 +3076,10 @@ a {
     }
     
     .main-footer .footer-grid {
-        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-        gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
+
 }
 
 /* Extra Large Devices (Large Desktops, 1201px and up) */
@@ -2941,7 +3095,7 @@ a {
     
     /* Hero Section */
     .hero-section {
-        padding: 100px 80px;
+        padding: 50px 80px;
     }
     
     .hero-content {
@@ -3003,7 +3157,7 @@ a {
     
     /* Services Section */
     .services-pricing-section {
-        padding: 100px 80px;
+        padding: 0px 80px;
     }
     
     .services-pricing-section .section-title {
@@ -3013,11 +3167,12 @@ a {
     .service-card-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
+        align-items: stretch;
     }
     
     /* Contact Section */
     .contact-us-section {
-        padding: 100px 80px;
+        padding: 10px 80px 80px 80px;
     }
     
     .contact-us-section .section-title {
