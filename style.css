@@ -2594,6 +2594,7 @@ a {
     .nav-links {
         justify-content: center;
         gap: 25px;
+        display: none;
     }
     
     /* Hero Section */
@@ -2819,6 +2820,7 @@ a {
     
     .nav-links {
         gap: 25px;
+        
     }
     
     /* Hero Section */
