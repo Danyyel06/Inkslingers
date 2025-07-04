@@ -2214,6 +2214,7 @@ a {
         gap: 15px;
         text-align: center;
         width: 100%;
+        display: none;
     }
     
     /* Hero Section */
