@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         const recipientEmail = 'inkslingerswritingco@gmail.com'; // Replace with the actual recipient email
-        const defaultSubject = 'Message from Website User'; // A default subject if you only use the textfield for body
+        const defaultSubject = 'Message from User'; // A default subject if you only use the textfield for body
 
         // Get the text from the textfield
         const messageBody = messageInput.value;
