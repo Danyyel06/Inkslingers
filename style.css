@@ -897,9 +897,7 @@ a {
 
 
 /* Card with White Plain background (default grid-item styling) */
-.card-white-plain {
-    /* No specific background or text color overrides, uses default .grid-item */
-}
+
 
 /* Long Process Card */
 .card-long-process {
